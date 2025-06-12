@@ -1,0 +1,199 @@
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Header/Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1558000494-cf564f24300a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTIyMDF8MHwxfHNlYXJjaHw1fHxzbWFydCUyMGhvbWUlMjBpbnRlcmlvcnxlbnwwfHx8fHwxNzA4MjQ3MjExfDA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #eee;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Azul mais escuro */
+}
+
+/* Services Section */
+.servicos-section {
+    background-color: #fff;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.servico-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.servico-item:hover {
+    transform: translateY(-5px);
+}
+
+.servico-item i {
+    font-size: 3em;
+    color: #2ecc71; /* Verde */
+    margin-bottom: 15px;
+}
+
+.servico-item h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+/* Why Choose Us Section */
+.porque-nos-section {
+    background-color: #ecf0f1; /* Cinza claro */
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.diferencial-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.diferencial-item i {
+    font-size: 2.5em;
+    color: #e67e22; /* Laranja */
+    margin-bottom: 15px;
+}
+
+.diferencial-item h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+/* Contact Section */
+.contacto-section {
+    background-color: #34495e; /* Azul escuro */
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.contacto-section h2 {
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #2ecc71; /* Verde */
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #3498db; /* Azul */
+}
+
+.btn-phone {
+    background-color: #2ecc71; /* Verde */
+    margin-top: 30px;
+    font-size: 1.1em;
+    padding: 15px 30px;
+}
+
+.btn-phone:hover {
+    background-color: #27ae60; /* Verde mais escuro */
+}
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Azul muito escuro */
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .servicos-grid, .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+}
